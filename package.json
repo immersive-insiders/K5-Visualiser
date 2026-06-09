@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@webspatial/core-sdk": "^1.7.0",
+    "@webspatial/react-sdk": "^1.7.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },

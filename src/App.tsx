@@ -10,8 +10,8 @@ export default function App() {
     <main className="page">
       <h1>Five dots that don&rsquo;t like to sit flat</h1>
 
-      <section className="card">
-        <div className="slider-row">
+      <section className="card" enable-xr>
+        <div className="slider-row" enable-xr>
           <label htmlFor="depth">2D &rarr; 3D</label>
           <input
             id="depth"

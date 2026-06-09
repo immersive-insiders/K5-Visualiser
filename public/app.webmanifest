@@ -1,0 +1,16 @@
+{
+  "name": "K5 Graph Visualizer",
+  "short_name": "K5 Graph",
+  "start_url": "/",
+  "scope": "/",
+  "display": "minimal-ui",
+  "background_color": "#1a1a18",
+  "theme_color": "#1d9e75",
+  "xr_main_scene": {
+    "baseplate_visibility": "hidden"
+  },
+  "icons": [
+    { "src": "/icon-512.png",  "sizes": "512x512",   "type": "image/png", "purpose": "any" },
+    { "src": "/icon-1024.png", "sizes": "1024x1024", "type": "image/png", "purpose": "maskable" }
+  ]
+}
