@@ -1,0 +1,147 @@
+:root {
+  --bg-page: #faf9f5;
+  --bg-primary: #ffffff;
+  --text-primary: #1a1a18;
+  --text-secondary: #5f5e5a;
+  --text-tertiary: #8a8980;
+  --border: rgba(0, 0, 0, 0.12);
+  --edge: #5f5e5a;
+  --node: #1d9e75;
+  --node-text: #ffffff;
+  --accent: #1d9e75;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-page: #1c1c1a;
+    --bg-primary: #262624;
+    --text-primary: #f1efe8;
+    --text-secondary: #b4b2a9;
+    --text-tertiary: #888780;
+    --border: rgba(255, 255, 255, 0.14);
+    --edge: #b4b2a9;
+    --node: #5dcaa5;
+    --node-text: #04342c;
+    --accent: #5dcaa5;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg-page);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.25;
+  margin: 0 0 1.5rem;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 2rem 0 0.5rem;
+}
+
+.card {
+  background: var(--bg-primary);
+  border: 0.5px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+}
+
+.slider-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.slider-row label {
+  font-size: 14px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.slider-row input[type='range'] {
+  flex: 1;
+  accent-color: var(--accent);
+}
+
+.readout {
+  font-size: 13px;
+  font-weight: 500;
+  min-width: 62px;
+  text-align: right;
+  color: var(--text-secondary);
+}
+
+.k5-canvas {
+  width: 100%;
+  height: 340px;
+  display: block;
+  cursor: grab;
+  touch-action: none;
+}
+
+.caption {
+  font-size: 13px;
+  color: var(--text-tertiary);
+  margin: 8px 0 0;
+  text-align: center;
+}
+
+.prose {
+  margin-top: 1.5rem;
+}
+
+.prose p {
+  margin: 0.75rem 0;
+}
+
+.prose ul {
+  padding-left: 1.25rem;
+}
+
+.prose li {
+  margin: 0.35rem 0;
+}
+
+.prose em {
+  font-style: italic;
+}
+
+.funfact {
+  border-left: 3px solid var(--accent);
+  border-radius: 0;
+  padding-left: 0.9rem;
+  margin-top: 1.5rem;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.foot {
+  margin-top: 2.5rem;
+  font-size: 13px;
+  color: var(--text-tertiary);
+}
